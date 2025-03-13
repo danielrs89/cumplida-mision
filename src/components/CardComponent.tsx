@@ -1,4 +1,10 @@
 function CardComponent() {
+
+/**
+ * FUNCIONA SE VE PERO sale en la punta de abajo investigar
+ * esta todo en variables para ser reutilizable
+ */
+
   // Variables de configuración reutilizables
   const cardWidth = 60;
   const cardHeight = 90;
