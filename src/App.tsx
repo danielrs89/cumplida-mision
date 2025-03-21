@@ -1,4 +1,5 @@
 import './App.css'
+import Card from './components/Card'
 import CardComponent from './components/CardComponent'
 import UnoRedCard from './UnoRedCard'
 /**
@@ -21,9 +22,17 @@ function App() {
   return (
     <>
       <UnoRedCard></UnoRedCard>
----
-      <CardComponent/ >
+      ---
+      <CardComponent />
+      
+      ---
+      <br />
+      <br />
+      {/* Carta personalizada */}
+      <Card number={7} cardColor="#ff5555" numberColor="#ffffff" />
 
+      {/* Otra carta con diferentes parámetros */}
+      <Card number={3} cardColor="#4CAF50" numberColor="#fff" />
     </>
   )
 }
