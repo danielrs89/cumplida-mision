@@ -1,8 +1,6 @@
-function MissionComponent() {
-
-/**
- * FALTA pasar Array o leer desde un fichero investiga
- */
+  /**
+   * FALTA pasar Array o leer desde un fichero investiga
+   */
 
 
   /**
@@ -78,6 +76,9 @@ Misiones adicionales (55–64)
 
 
    */
+
+
+function MissionComponent() {
   return (
     <div>MissionComponent</div>
   )
