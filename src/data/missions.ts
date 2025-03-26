@@ -1,3 +1,11 @@
+// 56.	La suma de las cartas impares es igual a la suma de las cartas pares 
+// 57.	La primera y la última carta son impares 
+// 58.	La segunda y la cuarta carta suman 9 
+// 61.	La suma de todas las cartas es un número primo 
+// 62.	Los números forman una escalera invertida
+// 63.	La suma de las dos cartas exteriores es igual a la de las dos cartas centrales
+// 64.	La carta de mayor valor está en la segunda posición
+
 export const missions:{id:Number; text: String;}[] = [
     { id: 1, text: "Las cartas azules suman 9" },
     { id: 2, text: "Todas las cartas son mayores de 4" },
@@ -36,7 +44,7 @@ export const missions:{id:Number; text: String;}[] = [
     { id: 35, text: "Las cartas se disponen en orden secuencial ascendente" },
     { id: 36, text: "Las cartas se disponen en orden secuencial descendente" },
     { id: 37, text: "El primer y el último número de la fila suman 8" },
-    { id: 38, text: "La carta central es un 4" },
+    { id: 38, text: "Dos cartas consecutivas suman 10" },
     { id: 39, text: "La carta de la izquierda es el doble de la carta de la derecha" },
     { id: 40, text: "Dos cartas consecutivas deben sumar 7" },
     { id: 41, text: "La suma de las cartas rojas es igual a la suma de las azules" },
@@ -47,10 +55,11 @@ export const missions:{id:Number; text: String;}[] = [
     { id: 46, text: "Las cartas se alternan en números pares e impares" },
     { id: 47, text: "Las cartas se alternan en colores" },
     { id: 48, text: "La primera y la última carta tienen el mismo número" },
-    { id: 49, text: "La carta central es de color verde" },
-    { id: 50, text: "La carta central es de color azul" },
-    { id: 51, text: "La carta central es de color roja" },
-    { id: 52, text: "La carta central es de color naranja" },
+    { id: 49, text: "El color más repetido es el verde" },
+    { id: 50, text: "El color más repetido es el azul" },
+    { id: 51, text: "El color más repetido es el roja" },
+    { id: 52, text: "El color más repetido es el naranja" },
     { id: 53, text: "Las dos cartas centrales deben ser del mismo color" },
     { id: 54, text: "La suma de las dos cartas centrales es 8" }
 ]
+

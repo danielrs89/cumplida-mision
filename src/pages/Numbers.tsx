@@ -6,12 +6,12 @@
 // #5555FF
 // #AA55FF *quest
 
-type CardProps = {
+type NumbersProps = {
     number: number; // Número que aparecerá en la carta
     cardColor: string; // Color de fondo de la carta
 };
 
-const Card: React.FC<CardProps> = ({ number, cardColor }) => {
+const Numbers: React.FC<NumbersProps> = ({ number, cardColor }) => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 360" width="150" height="225">
             {/* Borde de la carta con esquinas redondeadas */}
@@ -66,4 +66,4 @@ const Card: React.FC<CardProps> = ({ number, cardColor }) => {
     );
 };
 
-export default Card;
+export default Numbers;

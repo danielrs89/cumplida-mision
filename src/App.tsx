@@ -14,73 +14,26 @@
 // Pile.tsx: Representa una de las cuatro pilas en la mesa donde se juegan las cartas.
 // Mission.tsx: Muestra una misión activa que los jugadores deben cumplir.
 import './App.css'
-import Card from './components/CardNumber'
-import CardMis from './components/CardMission'
-import { missions } from "./data/missions";
+import CardsMissions from './components/CardsMissions';
+import CardsNumbers from './components/CardsNumbers';
+
+
 
 
 function App() {
 
 
-  const HTMLMissions = missions.map((quest, id) => {
-    return (
-      <div key={id}>
-        {/* <CardMis mission={quest.text} /> */}
-        <CardMis mission={String(quest.text)} />
-      </div>
-    );
-  });
+
+
 
 
   return (
     <>
       {/* MISSIONS */}
-      <div className='card-container'>
-        {HTMLMissions}
-      </div>
-
-      {/* <NUMBERS /> 
-      // #FF5555
-      // #FFAA00
-      // #55AA55
-      // #5555FF 
-      // #AA55FF*/}
-      <div >
-        <Card number={1} cardColor="#55AA55" />
-        <Card number={2} cardColor="#55AA55" />
-        <Card number={3} cardColor="#55AA55" />
-        <Card number={4} cardColor="#55AA55" />
-        <Card number={5} cardColor="#55AA55" />
-        <Card number={6} cardColor="#55AA55" />
-        <Card number={7} cardColor="#55AA55" />
-      </div>
-      <div>
-        <Card number={1} cardColor="#FF5555" />
-        <Card number={2} cardColor="#FF5555" />
-        <Card number={3} cardColor="#FF5555" />
-        <Card number={4} cardColor="#FF5555" />
-        <Card number={5} cardColor="#FF5555" />
-        <Card number={6} cardColor="#FF5555" />
-        <Card number={7} cardColor="#FF5555" />
-      </div>
-      <div>
-        <Card number={1} cardColor="#FFAA00" />
-        <Card number={2} cardColor="#FFAA00" />
-        <Card number={3} cardColor="#FFAA00" />
-        <Card number={4} cardColor="#FFAA00" />
-        <Card number={5} cardColor="#FFAA00" />
-        <Card number={6} cardColor="#FFAA00" />
-        <Card number={7} cardColor="#FFAA00" />
-      </div>
-      <div>
-        <Card number={1} cardColor="#5555FF" />
-        <Card number={2} cardColor="#5555FF" />
-        <Card number={3} cardColor="#5555FF" />
-        <Card number={4} cardColor="#5555FF" />
-        <Card number={5} cardColor="#5555FF" />
-        <Card number={6} cardColor="#5555FF" />
-        <Card number={7} cardColor="#5555FF" />
-      </div>
+      <CardsMissions />
+      <hr />
+      {/* <NUMBERS /> */}
+      <CardsNumbers/>  
     </>
   )
 }
